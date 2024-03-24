@@ -6,6 +6,9 @@ item.betterthanfarming.cowStomach.name=Cow Stomach
 item.betterthanfarming.cowStomach.desc=The stomach of a cow.
 item.betterthanfarming.bacterium.name=Bacterium
 item.betterthanfarming.bacterium.desc=An important ingredient for making cheese.
+item.betterthanfarming.plate.name=Plate
+item.betterthanfarming.plate.desc=It holds food. Shrimple as that.
+
 
 item.betterthanfarming.cheeseBlock.name=Cheese Block
 item.betterthanfarming.cheeseBlock.desc=Block of Cheese now as an item!
@@ -30,5 +33,13 @@ item.betterthanfarming.food.mutton.raw.desc=Uncooked meat from a sheep.
 item.betterthanfarming.food.mutton.cooked.name=Cooked Mutton
 item.betterthanfarming.food.mutton.cooked.desc=Braised meat from a sheep. Smoking!
 item.betterthanfarming.food.porkchop.cooked.desc=Braised meat from a pig. Smoking!
+item.betterthanfarming.food.beefBourguignon.name=Beef Bourguignon
+item.betterthanfarming.food.beefBourguignon.desc=A classic beef dish.
+item.betterthanfarming.food.irishStew.name=Irish Stew
+item.betterthanfarming.food.irishStew.desc=Made in Ireland, eaten in Minecraft.
+item.betterthanfarming.food.tikkaMassala.name=Chicken Tikka Massala
+item.betterthanfarming.food.tikkaMassala.desc=Yummy!
+item.betterthanfarming.food.fullEnglish.name=Full English Breakfast
+item.betterthanfarming.food.fullEnglish.desc=Contains all the ingredients for a good breakfast.
 
 

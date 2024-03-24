@@ -14,14 +14,14 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 
 public class BetterThanFarming implements ModInitializer, GameStartEntrypoint {
 	public static String MOD_ID = "betterthanfarming";
-	public static Logger logger = LoggerFactory.getLogger(MOD_ID);
+	public static Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public BetterThanFarming(){
 		EntityHelper.Core.createSpecialTileEntity(TileEntityStove.class, new TileEntityRendererStove(), "Stove");
 	}
 	@Override
 	public void onInitialize() {
-		logger.info("Better Than Farming has been initialised!");
+		LOGGER.info("Better Than Farming has been initialised!");
 	}
 
 	@Override
@@ -32,6 +32,6 @@ public class BetterThanFarming implements ModInitializer, GameStartEntrypoint {
 
 	@Override
 	public void afterGameStart() {
-
+		LOGGER.info("Bon appétit! :D");
 	}
 }

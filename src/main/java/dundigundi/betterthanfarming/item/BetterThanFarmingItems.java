@@ -29,6 +29,7 @@ public class BetterThanFarmingItems {
 	public static Item bacterium;
 	public static Item cheeseBlock;
 	public static Item toolKnife;
+	public static Item plate;
 	public static Item foodCheeseSlice;
 	public static Item foodScallion;
 	public static Item foodBeefRaw;
@@ -37,6 +38,10 @@ public class BetterThanFarmingItems {
 	public static Item foodChickenCooked;
 	public static Item foodMuttonRaw;
 	public static Item foodMuttonCooked;
+	public static Item foodBeefBourguignon;
+	public static Item foodIrishStew;
+	public static Item foodTikkaMassala;
+	public static Item foodFullEnglish;
 
 	public void initializeItems() {
 		salt = ItemHelper.createItem(MOD_ID, new Item("salt",nextItemID( "salt")), "salt.png").setMaxStackSize(64);
@@ -45,9 +50,11 @@ public class BetterThanFarmingItems {
 		bacterium = ItemHelper.createItem(MOD_ID, new Item("bacterium", nextItemID("bacterium")), "bacterium.png").setMaxStackSize(16);
 
 		cheeseBlock = ItemHelper.createItem(MOD_ID, new ItemPlaceable("cheeseBlock", nextItemID("cheeseBlock"), BetterThanFarmingBlocks.blockOfCheese).setMaxStackSize(1), "cheeseBlock.png");
-
+		//tools and utensils
 		toolKnife = ItemHelper.createItem(MOD_ID, new ItemToolKnife("tool.knife", nextItemID("toolKnife"), 2, ToolMaterial.wood), "knife.png");
+		plate = ItemHelper.createItem(MOD_ID, new Item("plate", nextItemID("plate")), "plate.png");
 
+		//crops and meats
 		foodScallion = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.scallion", nextItemID("foodScallion"), 1, false, 4), "scallion.png");
 		foodCheeseSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.cheeseSlice",nextItemID("foodCheeseSlice"), 1, false, 4), "cheeseSlice.png");
 		foodBeefRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.beef.raw", nextItemID("foodBeefRaw"), 3, true, 1), "beef_raw.png");
@@ -56,6 +63,12 @@ public class BetterThanFarmingItems {
 		foodChickenCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.chicken.cooked", nextItemID("foodChickenCooked"), 10, true), "chicken_cooked.png");
 		foodMuttonRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.mutton.raw", nextItemID("foodMuttonRaw"), 3, true, 3), "mutton_raw.png");
 		foodMuttonCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.mutton.cooked", nextItemID("foodMuttonCooked"), 8, true), "mutton_cooked.png");
+		//dishes
+		foodBeefBourguignon = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.beefBourguignon", nextItemID("foodBeefBourguignon"), 10, false), "beefBourguignon.png");
+		foodIrishStew = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.irishStew", nextItemID("foodIrishStew"), 8, false), "irishStew.png");
+		foodTikkaMassala = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.tikkaMassala", nextItemID("foodTikkaMassala"), 7, false), "tikkaMassala.png");
+		foodFullEnglish = ItemHelper.createItem(MOD_ID, new ItemFoodWithPlate("food.fullEnglish", nextItemID("foodFullEnglish"), 15, false), "fullEnglish.png");
+
 
 		//adding ingredients to the ingredientList to be able to cook them on stove
 		LookupCookingIngredients.instance.addIngredientEntry(16447, Item.foodPorkchopCooked); //adding porkchop
