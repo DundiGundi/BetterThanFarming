@@ -117,19 +117,23 @@ public class BetterThanFarmingBlocks {
 						.withDisabledNeighborNotifyOnMetadataChange()
 						.withTags(BlockTags.BROKEN_BY_FLUIDS, BlockTags.NOT_IN_CREATIVE_MENU, BetterThanFarmingTags.CUTTABLE_BY_KNIFE));
 		cheeseMaker = machineBuilder
-				.setTextures("cheeseMakerSides.png")
-				.setTopTexture("cheeseMakerTop.png")
+				.setTextures("cheeseMaker_side.png")
+				.setTopTexture("cheeseMaker_top.png")
 				.build(new BlockCheeseMaker("cheeseMaker", nextBlockID("cheeseMaker"), Material.wood)
 						.withTags(BlockTags.MINEABLE_BY_PICKAXE));
 		stoveIdle = machineBuilder
-				//.setTextures("test.png")
+				.setTextures("stove_side.png")
+				.setTopTexture("stove_top.png")
+				.setNorthTexture("stove_front_idle.png")
 				.build(new BlockStove("stove.idle", nextBlockID("stoveIdle"),false)
 						.withHardness(3.5f)
 						.withDisabledNeighborNotifyOnMetadataChange()
 						.withImmovableFlagSet()
 						.withTags(BlockTags.MINEABLE_BY_PICKAXE));
 		stoveActive = machineBuilder
-				.setTextures("test.png")
+				.setTextures("stove_side.png")
+				.setTopTexture("stove_top.png")
+				.setNorthTexture("stove_front_active.png")
 				.build(new BlockStove("stove.active", nextBlockID("stoveActive"), true)
 						.withHardness(3.5f)
 						.withLightEmission(0.875f)
