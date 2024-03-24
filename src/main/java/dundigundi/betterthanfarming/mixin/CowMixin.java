@@ -32,7 +32,7 @@ public abstract class CowMixin  extends EntityAnimal {
 			spawnAtLocation(BetterThanFarmingItems.cowStomach.id, 1);
 		}
 		if ((i = this.getDropItemId()) > 0) {
-			int j = 1 + this.random.nextInt(2);
+			int j = 1 + this.random.nextInt(3);
 			for (int k = 0; k < j; ++k) {
 				this.spawnAtLocation(i, 1);
 			}

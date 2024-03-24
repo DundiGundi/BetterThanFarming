@@ -57,12 +57,14 @@ public class BetterThanFarmingItems {
 		//crops and meats
 		foodScallion = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.scallion", nextItemID("foodScallion"), 1, false, 4), "scallion.png");
 		foodCheeseSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.cheeseSlice",nextItemID("foodCheeseSlice"), 1, false, 4), "cheeseSlice.png");
-		foodBeefRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.beef.raw", nextItemID("foodBeefRaw"), 3, true, 1), "beef_raw.png");
+		foodBeefRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.beef.raw", nextItemID("foodBeefRaw"), 2, true, 1), "beef_raw.png");
 		foodBeefCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.beef.cooked", nextItemID("foodBeefCooked"), 8, true), "beef_cooked.png");
-		foodChickenRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.chicken.raw", nextItemID("foodChickenRaw"), 3, true, 2), "chicken_raw.png");
-		foodChickenCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.chicken.cooked", nextItemID("foodChickenCooked"), 10, true), "chicken_cooked.png");
-		foodMuttonRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.mutton.raw", nextItemID("foodMuttonRaw"), 3, true, 3), "mutton_raw.png");
-		foodMuttonCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.mutton.cooked", nextItemID("foodMuttonCooked"), 8, true), "mutton_cooked.png");
+		foodChickenRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.chicken.raw", nextItemID("foodChickenRaw"), 2, true, 2), "chicken_raw.png");
+		foodChickenCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.chicken.cooked", nextItemID("foodChickenCooked"), 6, true), "chicken_cooked.png");
+		foodMuttonRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.mutton.raw", nextItemID("foodMuttonRaw"), 2, true, 3), "mutton_raw.png");
+		foodMuttonCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.mutton.cooked", nextItemID("foodMuttonCooked"), 5, true), "mutton_cooked.png");
+		Item.foodPorkchopRaw = new ItemFood("food.porkchop.raw", 16447, 2, true).setIconCoord(7, 5);
+		Item.foodPorkchopCooked = new ItemFood("food.porkchop.cooked", 16448, 6, true).setIconCoord(8, 5);
 		//dishes
 		foodBeefBourguignon = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.beefBourguignon", nextItemID("foodBeefBourguignon"), 10, false), "beefBourguignon.png");
 		foodIrishStew = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.irishStew", nextItemID("foodIrishStew"), 8, false), "irishStew.png");
