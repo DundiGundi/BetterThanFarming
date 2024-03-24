@@ -1,0 +1,22 @@
+tile.betterthanfarming.ore.salt.stone.name=Stone Salt Ore
+tile.betterthanfarming.ore.salt.stone.desc=Salt in one of it's natural forms
+tile.betterthanfarming.ore.salt.basalt.name=Basalt Salt Ore
+tile.betterthanfarming.ore.salt.basalt.desc=Salt in one of it's natural forms
+tile.betterthanfarming.ore.salt.limestone.name=Limestone Salt Ore
+tile.betterthanfarming.ore.salt.limestone.desc=Salt in one of it's natural forms
+tile.betterthanfarming.ore.salt.granite.name=Granite Salt Ore
+tile.betterthanfarming.ore.salt.granite.desc=Salt in one of it's natural forms
+tile.betterthanfarming.blockOfCheese.name=Block of Cheese
+tile.betterthanfarming.blockOfCheese.desc=Finest cheese in a block form
+tile.betterthanfarming.block.salt.name=Salt Block
+tile.betterthanfarming.block.salt.desc=Must be salty
+
+tile.betterthanfarming.cheeseMaker.name=Cheese Maker
+tile.betterthanfarming.cheeseMaker.desc =It makes cheese. Trust me!
+tile.betterthanfarming.stove.idle.name=Stove
+tile.betterthanfarming.stove.idle.desc=Light it up and fuel it to cook on it!
+tile.betterthanfarming.stove.active.name=Lit Stove
+tile.betterthanfarming.stove.active.desc=Light it up and fuel it to cook on it!
+
+tile.betterthanfarming.block.scallion.name=Scallion Plant
+tile.betterthanfarming.block.scallion.desc =You can cut it for scallions

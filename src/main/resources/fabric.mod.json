@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "betterthanfarming",
+  "version": "${version}",
+
+  "name": "Better Than Farming",
+  "description": "This mod aims to overhaul BTA farming and agriculture.",
+  "authors": [
+    "Dundi Gundi"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"dundigundi.betterthanfarming.BetterThanFarming"
+    ],
+		"beforeGameStart": [
+			"dundigundi.betterthanfarming.BetterThanFarming"
+		],
+		"afterGameStart": [
+			"dundigundi.betterthanfarming.BetterThanFarming"
+		],
+		"recipesReady": [
+			"dundigundi.betterthanfarming.recipe.BetterThanFarmingRecipes"
+		],
+		"terrain-api": [
+			"dundigundi.betterthanfarming.compat.terrainapi.TerrainAPIPlugin"
+		]
+	},
+  "mixins": [
+		"betterthanfarming.mixins.json"
+  ],
+
+  "depends": {
+		"fabricloader": ">=0.15.5",
+		"halplibe": ">=3.4.13",
+		"terrain-api": ">=1.4.0-7.1",
+		"catalyst-core": ">=1.1.3"
+  },
+  "suggests": {
+  }
+}

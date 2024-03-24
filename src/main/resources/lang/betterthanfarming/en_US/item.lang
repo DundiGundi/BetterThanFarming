@@ -1,0 +1,34 @@
+item.betterthanfarming.salt.name=Salt
+item.betterthanfarming.salt.desc=Don't be salty!
+item.betterthanfarming.rennet.name=Rennet
+item.betterthanfarming.rennet.desc=An important ingredient for making cheese.
+item.betterthanfarming.cowStomach.name=Cow Stomach
+item.betterthanfarming.cowStomach.desc=The stomach of a cow.
+item.betterthanfarming.bacterium.name=Bacterium
+item.betterthanfarming.bacterium.desc=An important ingredient for making cheese.
+
+item.betterthanfarming.cheeseBlock.name=Cheese Block
+item.betterthanfarming.cheeseBlock.desc=Block of Cheese now as an item!
+
+item.betterthanfarming.tool.knife.name=Knife
+item.betterthanfarming.tool.knife.desc=Sharp indeed!
+
+item.betterthanfarming.food.scallion.name=Scallion
+item.betterthanfarming.food.scallion.desc =You can eat it or make cheese with it
+item.betterthanfarming.food.cheeseSlice.name=A slice of cheese
+item.betterthanfarming.food.cheeseSlice.desc=Finest cheese in the world!
+item.betterthanfarming.food.beef.raw.name=Raw Beef
+item.betterthanfarming.food.beef.raw.desc=Uncooked meat from a cow.
+item.betterthanfarming.food.beef.cooked.name=Cooked Beef
+item.betterthanfarming.food.beef.cooked.desc=Braised meat from a cow. Smoking!
+item.betterthanfarming.food.chicken.raw.name=Raw Chicken
+item.betterthanfarming.food.chicken.raw.desc=Uncooked meat from a chicken.
+item.betterthanfarming.food.chicken.cooked.name=Cooked Chicken
+item.betterthanfarming.food.chicken.cooked.desc=Braised meat from a chicken. Smoking!
+item.betterthanfarming.food.mutton.raw.name=Raw Mutton
+item.betterthanfarming.food.mutton.raw.desc=Uncooked meat from a sheep.
+item.betterthanfarming.food.mutton.cooked.name=Cooked Mutton
+item.betterthanfarming.food.mutton.cooked.desc=Braised meat from a sheep. Smoking!
+item.betterthanfarming.food.porkchop.cooked.desc=Braised meat from a pig. Smoking!
+
+
