@@ -1,6 +1,7 @@
 package dundigundi.betterthanfarming.recipe;
 
 import dundigundi.betterthanfarming.BetterThanFarming;
+import dundigundi.betterthanfarming.block.BetterThanFarmingBlocks;
 import dundigundi.betterthanfarming.item.BetterThanFarmingItems;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.data.DataLoader;
@@ -34,6 +35,19 @@ public class BetterThanFarmingRecipes implements RecipeEntrypoint {
 		Registries.RECIPES.register("betterthanfarming", BETTERTHANFARMING);
 		DataLoader.loadRecipes("/assets/betterthanfarming/recipes/workbench/recipes.json");
 
+		RecipeBuilder.Shaped(MOD_ID)
+				.setShape("CHC", "CBC", "SSS")
+				.addInput('C', Block.cobbleStone)
+				.addInput('H', Item.toolShovelWood)
+				.addInput('B', Item.bucket)
+				.addInput('S', Block.slabCobbleStone)
+				.setConsumeContainer(false)
+				.create("cheeseMaker", BetterThanFarmingBlocks.cheeseMaker.getDefaultStack());
+		RecipeBuilder.Shaped(MOD_ID)
+				.setShape(" F", "S ")
+				.addInput('F', Item.flint)
+				.addInput('S', Item.stick)
+				.create("knife", BetterThanFarmingItems.toolKnife.getDefaultStack());
 
 		RecipeBuilder.Shaped(MOD_ID)
 				.setShape("AM", "BB", "W")
@@ -84,6 +98,19 @@ public class BetterThanFarmingRecipes implements RecipeEntrypoint {
 				.create("cookChicken", (BetterThanFarmingItems.foodChickenCooked).getDefaultStack());
 
 		RecipeBuilder.Furnace(MOD_ID)
+				.setInput(BetterThanFarmingItems.foodMuttonRaw)
+				.create("cookMutton", (BetterThanFarmingItems.foodMuttonCooked).getDefaultStack());
+
+		//BlastFurnaceRecipes:
+		RecipeBuilder.BlastFurnace(MOD_ID)
+				.setInput(BetterThanFarmingItems.foodBeefRaw)
+				.create("cookBeef", (BetterThanFarmingItems.foodBeefCooked).getDefaultStack());
+
+		RecipeBuilder.BlastFurnace(MOD_ID)
+				.setInput(BetterThanFarmingItems.foodChickenRaw)
+				.create("cookChicken", (BetterThanFarmingItems.foodChickenCooked).getDefaultStack());
+
+		RecipeBuilder.BlastFurnace(MOD_ID)
 				.setInput(BetterThanFarmingItems.foodMuttonRaw)
 				.create("cookMutton", (BetterThanFarmingItems.foodMuttonCooked).getDefaultStack());
 	}
