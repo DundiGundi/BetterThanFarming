@@ -8,7 +8,11 @@ import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
 import org.lwjgl.opengl.GL11;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TileEntityRendererStove extends TileEntityRenderer<TileEntityStove> {
+	private List<EntityItem> entityItems = new ArrayList<EntityItem>();
 	public void doRenderItem(EntityItem entityItem, double d, double d1, double d2, float f, float f1) {
 		ItemStack itemStack = entityItem.item;
 		if (itemStack == null) {
@@ -52,8 +56,13 @@ public class TileEntityRendererStove extends TileEntityRenderer<TileEntityStove>
 		 */
 		for (int i = 0; i < tileEntity.contentsToCook.size(); i++){
 			if (relativeX < offsetX * 3) {
-				EntityItem entityItem = new EntityItem(tileEntity.worldObj, x, y, z, new ItemStack(tileEntity.contentsToCook.get(i), 1));
-				this.doRenderItem(entityItem, x + relativeX, y, z + relativeZ, 0, 0);
+				if (entityItems.size() < i + 1){
+					entityItems.add(new EntityItem(tileEntity.worldObj, x, y, z, new ItemStack(tileEntity.contentsToCook.get(i), 1)));
+					tileEntity.worldObj.entityJoinedWorld(entityItems.get(i));
+				}else {
+					entityItems.set(i, new EntityItem(tileEntity.worldObj, x, y, z, new ItemStack(tileEntity.contentsToCook.get(i), 1)));
+				}
+				this.doRenderItem(entityItems.get(i), x + relativeX, y, z + relativeZ, 0, 0);
 				relativeX += offsetX;
 				if (relativeX == offsetX * 3) {
 					relativeX = 0;
@@ -61,7 +70,6 @@ public class TileEntityRendererStove extends TileEntityRenderer<TileEntityStove>
 						relativeZ += offsetZ;
 					}
 				}
-				tileEntity.worldObj.entityJoinedWorld(entityItem);
 			}
 		}
 	}

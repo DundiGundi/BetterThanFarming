@@ -5,6 +5,7 @@ import dundigundi.betterthanfarming.block.entity.TileEntityCheeseMaker;
 import dundigundi.betterthanfarming.block.entity.TileEntityStove;
 import dundigundi.betterthanfarming.item.BetterThanFarmingItems;
 import dundigundi.betterthanfarming.misc.LookupCookingIngredients;
+import dundigundi.betterthanfarming.render.TileEntityRendererStove;
 import net.minecraft.client.render.entity.ItemEntityRenderer;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockTileEntity;
