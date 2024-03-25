@@ -9,7 +9,6 @@ import dundigundi.betterthanfarming.gui.ContainerCheeseMaker;
 import dundigundi.betterthanfarming.gui.ContainerStove;
 import dundigundi.betterthanfarming.gui.GuiCheeseMaker;
 import dundigundi.betterthanfarming.gui.GuiStove;
-import dundigundi.betterthanfarming.block.BlockMelon;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
 import net.minecraft.client.sound.block.BlockSounds;
 import net.minecraft.core.block.Block;

@@ -1,6 +1,5 @@
 package dundigundi.betterthanfarming.gui;
 
-import dundigundi.betterthanfarming.block.entity.TileEntityCheeseMaker;
 import dundigundi.betterthanfarming.block.entity.TileEntityStove;
 import net.minecraft.core.InventoryAction;
 import net.minecraft.core.crafting.ICrafting;
