@@ -85,6 +85,6 @@ public class BetterThanFarmingItems {
 		LookupCookingIngredients.instance.addIngredientEntry(BetterThanFarmingItems.foodBeefRaw.id, BetterThanFarmingItems.foodBeefCooked);
 		LookupCookingIngredients.instance.addIngredientEntry(BetterThanFarmingItems.foodChickenRaw.id, BetterThanFarmingItems.foodChickenCooked);
 		LookupCookingIngredients.instance.addIngredientEntry(BetterThanFarmingItems.foodMuttonRaw.id, BetterThanFarmingItems.foodMuttonCooked);
-
+		LookupCookingIngredients.instance.addIngredientEntry(BetterThanFarmingItems.foodCalamariRaw.id, BetterThanFarmingItems.foodCalamariCooked);
 	}
 }

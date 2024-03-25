@@ -100,6 +100,9 @@ public class BetterThanFarmingRecipes implements RecipeEntrypoint {
 		RecipeBuilder.Furnace(MOD_ID)
 				.setInput(BetterThanFarmingItems.foodMuttonRaw)
 				.create("cookMutton", (BetterThanFarmingItems.foodMuttonCooked).getDefaultStack());
+		RecipeBuilder.Furnace(MOD_ID)
+				.setInput(BetterThanFarmingItems.foodCalamariRaw)
+				.create("cookMutton", (BetterThanFarmingItems.foodCalamariCooked).getDefaultStack());
 
 		//BlastFurnaceRecipes:
 		RecipeBuilder.BlastFurnace(MOD_ID)
@@ -113,6 +116,9 @@ public class BetterThanFarmingRecipes implements RecipeEntrypoint {
 		RecipeBuilder.BlastFurnace(MOD_ID)
 				.setInput(BetterThanFarmingItems.foodMuttonRaw)
 				.create("cookMutton", (BetterThanFarmingItems.foodMuttonCooked).getDefaultStack());
+		RecipeBuilder.BlastFurnace(MOD_ID)
+				.setInput(BetterThanFarmingItems.foodCalamariRaw)
+				.create("cookMutton", (BetterThanFarmingItems.foodCalamariCooked).getDefaultStack());
 	}
 
 }
