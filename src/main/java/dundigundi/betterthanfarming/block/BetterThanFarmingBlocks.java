@@ -43,7 +43,7 @@ public class BetterThanFarmingBlocks {
 	//Food
 	public static Block blockOfCheese;
 	public static Block blockScallion;
-	public static Block BlockMelon;
+	public static Block blockMelon;
 
 	//Machines
 	public static Block cheeseMaker;
@@ -158,11 +158,10 @@ public class BetterThanFarmingBlocks {
 						.setKilledByWeather()
 						.withTags(BetterThanFarmingTags.CUTTABLE_BY_KNIFE));
 
-		BlockMelon = blockCropBuilder
-			.setSideTextures(MOD_ID, "melonSide.png")
+		blockMelon = blockCropBuilder
+			.setTextures(MOD_ID, "melonSide.png")
 			.setTopTexture(MOD_ID, "melonTop.png")
-			.setBottomTexture(MOD_ID, "melonSide.png")
-			.build(new BlockMelon("block.melon", nextBlockID("BlockMelon")));
+			.build(new BlockMelon("block.melon", nextBlockID("blockMelon"), Material.wood));
 
 		registerGUIs();
 		initializeTiles();

@@ -17,12 +17,13 @@ public class BetterThanFarming implements ModInitializer, GameStartEntrypoint {
 	public static String MOD_ID = "betterthanfarming";
 	public static Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	/*TODO
+	/*TODO todo
 	smoker block
 	flavours (food effects on the player)
 	charcoal adds smokey flavour
 	cooking pot from the farmers delight to cook and serve stews
 	vinery
+	lang files for melon
   	effects(catalyst):
   		regeneration
   		hunger

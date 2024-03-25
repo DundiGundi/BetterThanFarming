@@ -2,6 +2,7 @@ package dundigundi.betterthanfarming.compat.terrainapi;
 
 import dundigundi.betterthanfarming.BetterThanFarming;
 import dundigundi.betterthanfarming.block.BetterThanFarmingBlocks;
+import dundigundi.betterthanfarming.world.WorldFeatureMelon;
 import dundigundi.betterthanfarming.world.WorldFeatureSaltLake;
 import dundigundi.betterthanfarming.world.WorldFeatureScallionPlant;
 import net.minecraft.core.world.biome.Biome;
@@ -33,6 +34,8 @@ public class OverworldInitialization extends BaseInitialization {
 				new Biome[]{Biomes.OVERWORLD_BIRCH_FOREST, Biomes.OVERWORLD_RETRO, Biomes.OVERWORLD_MEADOW, Biomes.OVERWORLD_FOREST, Biomes.OVERWORLD_SEASONAL_FOREST});
 		ChunkDecoratorOverworldAPI.randomFeatures.addFeature(new WorldFeatureSaltLake(), 1, -1, 1,
 				new Biome[]{Biomes.OVERWORLD_DESERT});
+		ChunkDecoratorOverworldAPI.randomFeatures.addFeature(new WorldFeatureMelon(), 1, -1, 1,
+				new Biome[]{Biomes.OVERWORLD_RAINFOREST});
 	}
 
 	@Override
