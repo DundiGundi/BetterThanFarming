@@ -38,7 +38,7 @@ public abstract class CowMixin  extends EntityAnimal {
 			}
 		}
 		if ((i = Item.leather.id) > 0) {
-			int j = this.random.nextInt(5) + 1;
+			int j = this.random.nextInt(4) + 1;
 			for (int k = 0; k < j; ++k) {
 				this.spawnAtLocation(i, 1);
 			}

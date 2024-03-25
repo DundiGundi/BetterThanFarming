@@ -1,25 +1,15 @@
 package dundigundi.betterthanfarming.block;
 
-import dundigundi.betterthanfarming.BetterThanFarming;
-import dundigundi.betterthanfarming.block.entity.TileEntityCheeseMaker;
+
 import dundigundi.betterthanfarming.block.entity.TileEntityStove;
-import dundigundi.betterthanfarming.item.BetterThanFarmingItems;
 import dundigundi.betterthanfarming.misc.LookupCookingIngredients;
-import dundigundi.betterthanfarming.render.TileEntityRendererStove;
-import net.minecraft.client.render.entity.ItemEntityRenderer;
-import net.minecraft.core.block.Block;
-import net.minecraft.core.block.BlockTileEntity;
 import net.minecraft.core.block.BlockTileEntityRotatable;
 import net.minecraft.core.block.entity.TileEntity;
-import net.minecraft.core.block.entity.TileEntityFurnace;
 import net.minecraft.core.block.material.Material;
-import net.minecraft.core.crafting.LookupFuelFurnace;
-import net.minecraft.core.entity.Entity;
 import net.minecraft.core.entity.EntityItem;
 import net.minecraft.core.entity.player.EntityPlayer;
 import net.minecraft.core.enums.EnumDropCause;
 import net.minecraft.core.item.Item;
-import net.minecraft.core.item.ItemFood;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.world.World;
 import org.lwjgl.input.Keyboard;
