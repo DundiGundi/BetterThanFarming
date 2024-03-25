@@ -9,6 +9,7 @@ import dundigundi.betterthanfarming.gui.ContainerCheeseMaker;
 import dundigundi.betterthanfarming.gui.ContainerStove;
 import dundigundi.betterthanfarming.gui.GuiCheeseMaker;
 import dundigundi.betterthanfarming.gui.GuiStove;
+import dundigundi.betterthanfarming.block.BlockMelon;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockTallGrass;
@@ -42,6 +43,7 @@ public class BetterThanFarmingBlocks {
 	//Food
 	public static Block blockOfCheese;
 	public static Block blockScallion;
+	public static Block BlockMelon;
 
 	//Machines
 	public static Block cheeseMaker;
@@ -64,6 +66,8 @@ public class BetterThanFarmingBlocks {
 	}
 
 	public void initializeBlocks() {
+
+		// block builders
 
 		BlockBuilder oreBuilder = new BlockBuilder(MOD_ID)
 				.setResistance(3f)
@@ -93,6 +97,14 @@ public class BetterThanFarmingBlocks {
 				.setBlockSound(BlockSounds.GRASS)
 				.setHardness(0.0f)
 				.setTags(BlockTags.BROKEN_BY_FLUIDS, BlockTags.PLACE_OVERWRITES, BlockTags.SHEARS_DO_SILK_TOUCH);
+
+		BlockBuilder blockCropBuilder = new BlockBuilder(MOD_ID)
+			.setBlockSound(BlockSounds.WOOD)
+			.setHardness(0.8F)
+			.setResistance(0.8F)
+			.setTags(BlockTags.MINEABLE_BY_HOE);
+
+		// blocks themselves
 
 		oreSaltStone = oreBuilder
 				.setTextures("oreSalt_stone.png")
@@ -145,6 +157,12 @@ public class BetterThanFarmingBlocks {
 				.build(new BlockTallGrass("block.scallion", nextBlockID("blockScallion"))
 						.setKilledByWeather()
 						.withTags(BetterThanFarmingTags.CUTTABLE_BY_KNIFE));
+
+		BlockMelon = blockCropBuilder
+			.setSideTextures(MOD_ID, "melonSide.png")
+			.setTopTexture(MOD_ID, "melonTop.png")
+			.setBottomTexture(MOD_ID, "melonSide.png")
+			.build(new BlockMelon("block.melon", nextBlockID("BlockMelon")));
 
 		registerGUIs();
 		initializeTiles();

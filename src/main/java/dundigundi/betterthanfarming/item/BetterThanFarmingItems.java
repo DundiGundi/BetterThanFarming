@@ -42,6 +42,7 @@ public class BetterThanFarmingItems {
 	public static Item foodMuttonCooked;
 	public static Item foodCalamariRaw;
 	public static Item foodCalamariCooked;
+	public static Item melonSlice;
 	//dishes
 	public static Item foodBeefBourguignon;
 	public static Item foodIrishStew;
@@ -72,6 +73,7 @@ public class BetterThanFarmingItems {
 		Item.foodPorkchopCooked = new ItemFoodStackable("food.porkchop.cooked", 16448, 6, true, 4).setIconCoord(8, 5);
 		foodCalamariRaw = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.calamari.raw", nextItemID("foodCalamariRaw"), 1, true, 8), "calamari_raw.png");
 		foodCalamariCooked = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.calamari.cooked", nextItemID("foodCalamariCooked"), 3, true, 8), "calamari_cooked.png");
+		melonSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.melon.slice", nextItemID("melonSlice"), 2, false, 8), "melonSlice.png");
 
 		//dishes
 		foodBeefBourguignon = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.beefBourguignon", nextItemID("foodBeefBourguignon"), 10, false), "beefBourguignon.png");
