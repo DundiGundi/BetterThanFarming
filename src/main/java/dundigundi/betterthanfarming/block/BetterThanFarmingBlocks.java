@@ -10,12 +10,12 @@ import dundigundi.betterthanfarming.gui.ContainerStove;
 import dundigundi.betterthanfarming.gui.GuiCheeseMaker;
 import dundigundi.betterthanfarming.gui.GuiStove;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
-import net.minecraft.client.sound.block.BlockSounds;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockTallGrass;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
 import net.minecraft.core.item.tool.ItemToolPickaxe;
+import net.minecraft.core.sound.BlockSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sunsetsatellite.catalyst.Catalyst;
@@ -66,7 +66,6 @@ public class BetterThanFarmingBlocks {
 	public void initializeBlocks() {
 
 		BlockBuilder oreBuilder = new BlockBuilder(MOD_ID)
-				.setBlockSound(BlockSounds.STONE)
 				.setResistance(3f)
 				.setHardness(3f)
 				.setTags(BlockTags.MINEABLE_BY_PICKAXE);

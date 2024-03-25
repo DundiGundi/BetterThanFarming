@@ -14,7 +14,7 @@ public class ItemFoodWithPlate extends ItemFood {
 
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entityplayer) {
-		if (entityplayer.health < 20){
+		if (entityplayer.getHealth() < 20){
 			entityplayer.inventory.insertItem(new ItemStack(BetterThanFarmingItems.plate, 1), false);
 		}
 		return super.onItemRightClick(itemstack, world, entityplayer);
