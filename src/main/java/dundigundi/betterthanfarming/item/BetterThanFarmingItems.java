@@ -60,18 +60,18 @@ public class BetterThanFarmingItems {
 		plate = ItemHelper.createItem(MOD_ID, new Item("plate", nextItemID("plate")), "plate.png");
 
 		//crops and meats
-		foodScallion = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.scallion", nextItemID("foodScallion"), 1, false, 4), "scallion.png");
-		foodCheeseSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.cheeseSlice",nextItemID("foodCheeseSlice"), 1, false, 4), "cheeseSlice.png");
-		foodBeefRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.beef.raw", nextItemID("foodBeefRaw"), 2, true, 1), "beef_raw.png");
-		foodBeefCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.beef.cooked", nextItemID("foodBeefCooked"), 8, true), "beef_cooked.png");
-		foodChickenRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.chicken.raw", nextItemID("foodChickenRaw"), 2, true, 2), "chicken_raw.png");
-		foodChickenCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.chicken.cooked", nextItemID("foodChickenCooked"), 6, true), "chicken_cooked.png");
-		foodMuttonRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.mutton.raw", nextItemID("foodMuttonRaw"), 2, true, 3), "mutton_raw.png");
-		foodMuttonCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.mutton.cooked", nextItemID("foodMuttonCooked"), 5, true), "mutton_cooked.png");
-		Item.foodPorkchopRaw = new ItemFood("food.porkchop.raw", 16447, 2, true).setIconCoord(7, 5);
-		Item.foodPorkchopCooked = new ItemFood("food.porkchop.cooked", 16448, 6, true).setIconCoord(8, 5);
-		foodCalamariRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.calamari.raw", nextItemID("foodCalamariRaw"), 1, true, 3), "calamari_raw.png");
-		foodCalamariCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.calamari.cooked", nextItemID("foodCalamariCooked"), 3, true), "calamari_cooked.png");
+		foodScallion = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.scallion", nextItemID("foodScallion"), 1, false, 8), "scallion.png");
+		foodCheeseSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.cheeseSlice",nextItemID("foodCheeseSlice"), 1, false, 8), "cheeseSlice.png");
+		foodBeefRaw = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.beef.raw", nextItemID("foodBeefRaw"), 2, true, 4), "beef_raw.png");
+		foodBeefCooked = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.beef.cooked", nextItemID("foodBeefCooked"), 8, true, 4), "beef_cooked.png");
+		foodChickenRaw = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.chicken.raw", nextItemID("foodChickenRaw"), 2, true, 4), "chicken_raw.png");
+		foodChickenCooked = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.chicken.cooked", nextItemID("foodChickenCooked"), 6, true, 4), "chicken_cooked.png");
+		foodMuttonRaw = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.mutton.raw", nextItemID("foodMuttonRaw"), 2, true, 4), "mutton_raw.png");
+		foodMuttonCooked = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.mutton.cooked", nextItemID("foodMuttonCooked"), 5, true, 4), "mutton_cooked.png");
+		Item.foodPorkchopRaw = new ItemFoodStackable("food.porkchop.raw", 16447, 2, true, 4).setIconCoord(7, 5);
+		Item.foodPorkchopCooked = new ItemFoodStackable("food.porkchop.cooked", 16448, 6, true, 4).setIconCoord(8, 5);
+		foodCalamariRaw = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.calamari.raw", nextItemID("foodCalamariRaw"), 1, true, 8), "calamari_raw.png");
+		foodCalamariCooked = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.calamari.cooked", nextItemID("foodCalamariCooked"), 3, true, 8), "calamari_cooked.png");
 
 		//dishes
 		foodBeefBourguignon = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.beefBourguignon", nextItemID("foodBeefBourguignon"), 10, false), "beefBourguignon.png");
