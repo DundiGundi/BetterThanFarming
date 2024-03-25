@@ -2,6 +2,7 @@ package dundigundi.betterthanfarming;
 
 import dundigundi.betterthanfarming.block.BetterThanFarmingBlocks;
 import dundigundi.betterthanfarming.block.entity.TileEntityStove;
+import dundigundi.betterthanfarming.catalyst.effects.BetterThanFarmingEffects;
 import dundigundi.betterthanfarming.item.BetterThanFarmingItems;
 import dundigundi.betterthanfarming.render.TileEntityRendererStove;
 import net.fabricmc.api.ModInitializer;
@@ -16,6 +17,17 @@ public class BetterThanFarming implements ModInitializer, GameStartEntrypoint {
 	public static String MOD_ID = "betterthanfarming";
 	public static Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	/*TODO
+	smoker block
+	flavours (food effects on the player)
+	charcoal adds smokey flavour
+	cooking pot from the farmers delight to cook and serve stews
+	vinery
+  	effects(catalyst):
+  		regeneration
+  		hunger
+	* */
+
 	public BetterThanFarming(){
 		EntityHelper.Core.createSpecialTileEntity(TileEntityStove.class, new TileEntityRendererStove(), "Stove");
 	}
@@ -28,6 +40,7 @@ public class BetterThanFarming implements ModInitializer, GameStartEntrypoint {
 	public void beforeGameStart() {
 		new BetterThanFarmingBlocks().initializeBlocks();
 		new BetterThanFarmingItems().initializeItems();
+		new BetterThanFarmingEffects().initializeEffects();
 	}
 
 	@Override
