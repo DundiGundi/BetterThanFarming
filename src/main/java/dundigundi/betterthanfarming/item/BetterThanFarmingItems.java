@@ -8,6 +8,7 @@ import dundigundi.betterthanfarming.misc.LookupCookingIngredients;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemFoodStackable;
 import net.minecraft.core.item.ItemPlaceable;
+import net.minecraft.core.item.ItemSeeds;
 import net.minecraft.core.item.material.ToolMaterial;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,6 +30,8 @@ public class BetterThanFarmingItems {
 	//tools and utensils
 	public static Item toolKnife;
 	public static Item plate;
+	//seeds
+	public static Item seedsWatermelon;
 	//crops and meats
 	public static Item foodCheeseSlice;
 	public static Item foodScallion;
@@ -54,9 +57,13 @@ public class BetterThanFarmingItems {
 		bacterium = ItemHelper.createItem(MOD_ID, new Item("bacterium", nextItemID("bacterium")), "bacterium.png").setMaxStackSize(16);
 
 		cheeseBlock = ItemHelper.createItem(MOD_ID, new ItemPlaceable("cheeseBlock", nextItemID("cheeseBlock"), BetterThanFarmingBlocks.blockOfCheese).setMaxStackSize(1), "cheeseBlock.png");
+
 		//tools and utensils
 		toolKnife = ItemHelper.createItem(MOD_ID, new ItemToolKnife("tool.knife", nextItemID("toolKnife"), 2, ToolMaterial.wood), "knife.png");
 		plate = ItemHelper.createItem(MOD_ID, new Item("plate", nextItemID("plate")), "plate.png");
+
+		//seeds
+		seedsWatermelon = ItemHelper.createItem(MOD_ID, new ItemSeeds("seeds.watermelon", nextItemID("seedsWatermelon"), BetterThanFarmingBlocks.cropsWatermelon), "seeds_watermelon.png");
 
 		//crops and meats
 		foodScallion = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.scallion", nextItemID("foodScallion"), 1, false, 8	), "scallion.png");

@@ -6,15 +6,17 @@ item.betterthanfarming.cowStomach.name=Cow Stomach
 item.betterthanfarming.cowStomach.desc=The stomach of a cow.
 item.betterthanfarming.bacterium.name=Bacterium
 item.betterthanfarming.bacterium.desc=An important ingredient for making cheese.
-item.betterthanfarming.plate.name=Plate
-item.betterthanfarming.plate.desc=It holds food. Shrimple as that.
-
 
 item.betterthanfarming.cheeseBlock.name=Cheese Block
 item.betterthanfarming.cheeseBlock.desc=Block of Cheese now as an item!
 
+item.betterthanfarming.seeds.watermelon.name=Watermelon Seeds
+item.betterthanfarming.seeds.watermelon.desc=Plant them to grow a watermelon plant!
+
 item.betterthanfarming.tool.knife.name=Knife
 item.betterthanfarming.tool.knife.desc=Sharp indeed!
+item.betterthanfarming.plate.name=Plate
+item.betterthanfarming.plate.desc=It holds food. Shrimple as that.
 
 item.betterthanfarming.food.scallion.name=Scallion
 item.betterthanfarming.food.scallion.desc =You can eat it or make cheese with it

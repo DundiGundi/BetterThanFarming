@@ -3,6 +3,7 @@ package dundigundi.betterthanfarming.block;
 import dundigundi.betterthanfarming.BetterThanFarming;
 import dundigundi.betterthanfarming.BetterThanFarmingConfig;
 import dundigundi.betterthanfarming.BetterThanFarmingTags;
+import dundigundi.betterthanfarming.block.crops.BlockCropsWatermelon;
 import dundigundi.betterthanfarming.block.entity.TileEntityCheeseMaker;
 import dundigundi.betterthanfarming.block.entity.TileEntityStove;
 import dundigundi.betterthanfarming.gui.ContainerCheeseMaker;
@@ -12,6 +13,7 @@ import dundigundi.betterthanfarming.gui.GuiStove;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
 import net.minecraft.client.sound.block.BlockSounds;
 import net.minecraft.core.block.Block;
+import net.minecraft.core.block.BlockCropsPumpkin;
 import net.minecraft.core.block.BlockTallGrass;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
@@ -38,6 +40,9 @@ public class BetterThanFarmingBlocks {
 	public static Block oreSaltLimestone;
 	public static Block oreSaltGranite;
 	public static Block blockSalt;
+
+	//Crops
+	public static Block cropsWatermelon;
 
 	//Food
 	public static Block blockOfCheese;
@@ -80,20 +85,20 @@ public class BetterThanFarmingBlocks {
 				.setHardness(0.5f);
 
 		BlockBuilder sandBuilder = new BlockBuilder(MOD_ID)
-				//.setBlockSound(BlockSounds.SAND.)
+				.setBlockSound(BlockSounds.SAND)
 				.setResistance(0.5f)
 				.setHardness(0.5f)
 				.setTags(BlockTags.MINEABLE_BY_SHOVEL, BlockTags.CAVES_CUT_THROUGH);
 
 		BlockBuilder machineBuilder = new BlockBuilder(MOD_ID)
-				//.setBlockSound(BlockSounds.WOOD)
+				.setBlockSound(BlockSounds.WOOD)
 				.setTextures(11, 3)
 				.setResistance(2.5f)
 				.setHardness(2.5f)
 				.setTags(BlockTags.MINEABLE_BY_AXE);
 
 		BlockBuilder plantBuilder = new BlockBuilder(MOD_ID)
-				//.setBlockSound(BlockSounds.GRASS)
+				.setBlockSound(BlockSounds.GRASS)
 				.setHardness(0.0f)
 				.setTags(BlockTags.BROKEN_BY_FLUIDS, BlockTags.PLACE_OVERWRITES, BlockTags.SHEARS_DO_SILK_TOUCH);
 
@@ -102,6 +107,10 @@ public class BetterThanFarmingBlocks {
 			.setHardness(0.8F)
 			.setResistance(0.8F)
 			.setTags(BlockTags.MINEABLE_BY_HOE);
+		BlockBuilder blockFlowerBuilder = new BlockBuilder(MOD_ID)
+				.setBlockSound(BlockSounds.GRASS)
+				.setHardness(0.0f)
+				.setTags(BlockTags.BROKEN_BY_FLUIDS, BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.OVERRIDE_STEPSOUND);
 
 		// blocks themselves
 
@@ -156,11 +165,12 @@ public class BetterThanFarmingBlocks {
 				.build(new BlockTallGrass("block.scallion", nextBlockID("blockScallion"))
 						.setKilledByWeather()
 						.withTags(BetterThanFarmingTags.CUTTABLE_BY_KNIFE));
-
 		blockWatermelon = blockCropBuilder
 			.setTextures(MOD_ID, "melonSide.png")
 			.setTopTexture(MOD_ID, "melonTop.png")
 			.build(new BlockWatermelon("block.melon", nextBlockID("blockWatermelon"), Material.wood));
+		cropsWatermelon = blockFlowerBuilder
+				.build(new BlockCropsWatermelon("crops.watermelon", nextBlockID("cropsWatermelon")).withDisabledStats().withDisabledNeighborNotifyOnMetadataChange().withLitInteriorSurface(true));
 
 		registerGUIs();
 		initializeTiles();
