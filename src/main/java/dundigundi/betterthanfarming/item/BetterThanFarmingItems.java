@@ -28,8 +28,10 @@ public class BetterThanFarmingItems {
 	public static Item cowStomach;
 	public static Item bacterium;
 	public static Item cheeseBlock;
+	//tools and utensils
 	public static Item toolKnife;
 	public static Item plate;
+	//crops and meats
 	public static Item foodCheeseSlice;
 	public static Item foodScallion;
 	public static Item foodBeefRaw;
@@ -38,6 +40,9 @@ public class BetterThanFarmingItems {
 	public static Item foodChickenCooked;
 	public static Item foodMuttonRaw;
 	public static Item foodMuttonCooked;
+	public static Item foodCalamariRaw;
+	public static Item foodCalamariCooked;
+	//dishes
 	public static Item foodBeefBourguignon;
 	public static Item foodIrishStew;
 	public static Item foodTikkaMassala;
@@ -65,6 +70,9 @@ public class BetterThanFarmingItems {
 		foodMuttonCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.mutton.cooked", nextItemID("foodMuttonCooked"), 5, true), "mutton_cooked.png");
 		Item.foodPorkchopRaw = new ItemFood("food.porkchop.raw", 16447, 2, true).setIconCoord(7, 5);
 		Item.foodPorkchopCooked = new ItemFood("food.porkchop.cooked", 16448, 6, true).setIconCoord(8, 5);
+		foodCalamariRaw = ItemHelper.createItem(MOD_ID, new ItemIngredient("food.calamari.raw", nextItemID("foodCalamariRaw"), 1, true, 3), "calamari_raw.png");
+		foodCalamariCooked = ItemHelper.createItem(MOD_ID, new ItemFood("food.calamari.cooked", nextItemID("foodCalamariCooked"), 3, true), "calamari_cooked.png");
+
 		//dishes
 		foodBeefBourguignon = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.beefBourguignon", nextItemID("foodBeefBourguignon"), 10, false), "beefBourguignon.png");
 		foodIrishStew = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.irishStew", nextItemID("foodIrishStew"), 8, false), "irishStew.png");
