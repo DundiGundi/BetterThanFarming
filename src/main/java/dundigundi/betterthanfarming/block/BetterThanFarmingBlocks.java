@@ -11,12 +11,12 @@ import dundigundi.betterthanfarming.gui.GuiCheeseMaker;
 import dundigundi.betterthanfarming.gui.GuiStove;
 import dundigundi.betterthanfarming.block.BlockMelon;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
+import net.minecraft.client.sound.block.BlockSounds;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockTallGrass;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
 import net.minecraft.core.item.tool.ItemToolPickaxe;
-import net.minecraft.core.sound.BlockSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sunsetsatellite.catalyst.Catalyst;
@@ -81,20 +81,20 @@ public class BetterThanFarmingBlocks {
 				.setHardness(0.5f);
 
 		BlockBuilder sandBuilder = new BlockBuilder(MOD_ID)
-				.setBlockSound(BlockSounds.SAND)
+				//.setBlockSound(BlockSounds.SAND.)
 				.setResistance(0.5f)
 				.setHardness(0.5f)
 				.setTags(BlockTags.MINEABLE_BY_SHOVEL, BlockTags.CAVES_CUT_THROUGH);
 
 		BlockBuilder machineBuilder = new BlockBuilder(MOD_ID)
-				.setBlockSound(BlockSounds.WOOD)
+				//.setBlockSound(BlockSounds.WOOD)
 				.setTextures(11, 3)
 				.setResistance(2.5f)
 				.setHardness(2.5f)
 				.setTags(BlockTags.MINEABLE_BY_AXE);
 
 		BlockBuilder plantBuilder = new BlockBuilder(MOD_ID)
-				.setBlockSound(BlockSounds.GRASS)
+				//.setBlockSound(BlockSounds.GRASS)
 				.setHardness(0.0f)
 				.setTags(BlockTags.BROKEN_BY_FLUIDS, BlockTags.PLACE_OVERWRITES, BlockTags.SHEARS_DO_SILK_TOUCH);
 

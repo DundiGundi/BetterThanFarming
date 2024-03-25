@@ -13,7 +13,7 @@ public class ItemFoodWithBowl extends ItemFood {
 
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entityplayer) {
-		if (entityplayer.getHealth() < 20){
+		if (entityplayer.health < 20){
 			entityplayer.inventory.insertItem(new ItemStack(Item.bowl, 1), false);
 		}
 		return super.onItemRightClick(itemstack, world, entityplayer);
