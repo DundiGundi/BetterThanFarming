@@ -18,8 +18,8 @@ item.betterthanfarming.tool.knife.desc=Sharp indeed!
 
 item.betterthanfarming.food.scallion.name=Scallion
 item.betterthanfarming.food.scallion.desc =You can eat it or make cheese with it
-item.betterthanfarming.food.cheeseSlice.name=A slice of cheese
-item.betterthanfarming.food.cheeseSlice.desc=Finest cheese in the world!
+item.betterthanfarming.food.cheese.slice.name=A slice of cheese
+item.betterthanfarming.food.cheese.slice.desc=Finest cheese in the world!
 item.betterthanfarming.food.beef.raw.name=Raw Beef
 item.betterthanfarming.food.beef.raw.desc=Uncooked meat from a cow.
 item.betterthanfarming.food.beef.cooked.name=Cooked Beef
@@ -44,5 +44,7 @@ item.betterthanfarming.food.tikkaMassala.name=Chicken Tikka Massala
 item.betterthanfarming.food.tikkaMassala.desc=Yummy!
 item.betterthanfarming.food.fullEnglish.name=Full English Breakfast
 item.betterthanfarming.food.fullEnglish.desc=Contains all the ingredients for a good breakfast.
+item.betterthanfarming.food.watermelon.slice.name=A slice of watermelon
+item.betterthanfarming.food.watermelon.slice.desc=Tastes delicious when cooled!
 
 

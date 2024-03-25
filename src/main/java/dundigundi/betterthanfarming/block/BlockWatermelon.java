@@ -2,16 +2,15 @@ package dundigundi.betterthanfarming.block;
 
 import dundigundi.betterthanfarming.item.BetterThanFarmingItems;
 import net.minecraft.core.block.Block;
-import net.minecraft.core.block.BlockPumpkin;
 import net.minecraft.core.block.entity.TileEntity;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.enums.EnumDropCause;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.world.World;
 
-public class BlockMelon extends Block {
+public class BlockWatermelon extends Block {
 
-	public BlockMelon(String key, int id, Material material) {
+	public BlockWatermelon(String key, int id, Material material) {
 		super(key, id, material);
 	}
 
@@ -22,7 +21,7 @@ public class BlockMelon extends Block {
 			case PICK_BLOCK:
 				return new ItemStack[]{new ItemStack(this)};
 			default:
-				return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodMelonSlice, 4)};
+				return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodWatermelonSlice, 4)};
 
 		}
 	}

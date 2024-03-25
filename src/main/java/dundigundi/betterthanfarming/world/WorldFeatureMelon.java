@@ -14,8 +14,8 @@ public class WorldFeatureMelon extends WorldFeature {
 			int k1;
 			int j1;
 			int i1 = x + random.nextInt(8) - random.nextInt(8);
-			if (!world.isAirBlock(i1, j1 = y + random.nextInt(4) - random.nextInt(4), k1 = z + random.nextInt(8) - random.nextInt(8)) || world.getBlockId(i1, j1 - 1, k1) != Block.grass.id || !BetterThanFarmingBlocks.blockMelon.canPlaceBlockAt(world, i1, j1, k1)) continue;
-			world.setBlockWithNotify(i1, j1, k1, BetterThanFarmingBlocks.blockMelon.id);
+			if (!world.isAirBlock(i1, j1 = y + random.nextInt(4) - random.nextInt(4), k1 = z + random.nextInt(8) - random.nextInt(8)) || world.getBlockId(i1, j1 - 1, k1) != Block.grass.id || !BetterThanFarmingBlocks.blockWatermelon.canPlaceBlockAt(world, i1, j1, k1)) continue;
+			world.setBlockWithNotify(i1, j1, k1, BetterThanFarmingBlocks.blockWatermelon.id);
 		}
 		return true;
 	}

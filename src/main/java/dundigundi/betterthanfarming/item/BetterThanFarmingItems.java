@@ -40,7 +40,7 @@ public class BetterThanFarmingItems {
 	public static Item foodMuttonCooked;
 	public static Item foodCalamariRaw;
 	public static Item foodCalamariCooked;
-	public static Item foodMelonSlice;
+	public static Item foodWatermelonSlice;
 	//dishes
 	public static Item foodBeefBourguignon;
 	public static Item foodIrishStew;
@@ -60,7 +60,7 @@ public class BetterThanFarmingItems {
 
 		//crops and meats
 		foodScallion = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.scallion", nextItemID("foodScallion"), 1, false, 8	), "scallion.png");
-		foodCheeseSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.cheeseSlice",nextItemID("foodCheeseSlice"), 1, false, 8), "cheeseSlice.png");
+		foodCheeseSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.cheese.slice",nextItemID("foodCheeseSlice"), 1, false, 8), "cheeseSlice.png");
 		foodBeefRaw = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.beef.raw", nextItemID("foodBeefRaw"), 2, true, 4), "beef_raw.png");
 		foodBeefCooked = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.beef.cooked", nextItemID("foodBeefCooked"), 8, true, 4), "beef_cooked.png");
 		foodChickenRaw = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.chicken.raw", nextItemID("foodChickenRaw"), 2, true, 4), "chicken_raw.png");
@@ -71,7 +71,7 @@ public class BetterThanFarmingItems {
 		Item.foodPorkchopCooked = new ItemFoodStackable("food.porkchop.cooked", 16448, 6, true, 4).setIconCoord(8, 5);
 		foodCalamariRaw = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.calamari.raw", nextItemID("foodCalamariRaw"), 1, true, 8), "calamari_raw.png");
 		foodCalamariCooked = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.calamari.cooked", nextItemID("foodCalamariCooked"), 3, true, 8), "calamari_cooked.png");
-		foodMelonSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.melon.slice", nextItemID("foodMelonSlice"), 2, false, 8), "melonSlice.png");
+		foodWatermelonSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.watermelon.slice", nextItemID("foodWatermelonSlice"), 2, false, 8), "watermelonSlice.png");
 
 		//dishes
 		foodBeefBourguignon = ItemHelper.createItem(MOD_ID, new ItemFoodWithBowl("food.beefBourguignon", nextItemID("foodBeefBourguignon"), 10, false), "beefBourguignon.png");
