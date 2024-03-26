@@ -88,6 +88,10 @@ public class BetterThanFarmingRecipes implements RecipeEntrypoint {
 				.setConsumeContainer(false)
 				.create("fullEnglishBreakfast", BetterThanFarmingItems.foodFullEnglish.getDefaultStack());
 
+		RecipeBuilder.Shapeless(MOD_ID)
+				.addInput(BetterThanFarmingItems.foodWatermelonSlice)
+				.create("seedsWatermelon", BetterThanFarmingItems.seedsWatermelon.getDefaultStack());
+
 		//FurnaceRecipes:
 		RecipeBuilder.Furnace(MOD_ID)
 				.setInput(BetterThanFarmingItems.foodBeefRaw)
