@@ -22,6 +22,8 @@ public class BetterThanFarming implements ModInitializer, GameStartEntrypoint {
 	charcoal adds smokey flavour
 	cooking pot from the farmers delight to cook and serve stews
 	vinery
+	turnip 3d
+	beetroot 3d
   	effects(catalyst):
   		regeneration
   		hunger
