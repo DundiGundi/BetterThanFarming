@@ -8,8 +8,7 @@
       "ChickenMixin",
       "SheepMixin",
       "SquidMixin",
-      "CraftingMixin",
-      "ItemDyeMixin"
+      "CraftingMixin"
     ],
     "client": [
     ],

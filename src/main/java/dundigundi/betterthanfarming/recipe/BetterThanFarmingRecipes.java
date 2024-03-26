@@ -33,7 +33,7 @@ public class BetterThanFarmingRecipes implements RecipeEntrypoint {
 
 		BETTERTHANFARMING.register("workbench", WORKBENCH );
 		Registries.RECIPES.register("betterthanfarming", BETTERTHANFARMING);
-		DataLoader.loadRecipes("/assets/betterthanfarming/recipes/workbench/recipes.json");
+		DataLoader.loadRecipesFromFile("/assets/betterthanfarming/recipes/workbench/recipes.json");
 
 		RecipeBuilder.Shaped(MOD_ID)
 				.setShape("CHC", "CBC", "SSS")
