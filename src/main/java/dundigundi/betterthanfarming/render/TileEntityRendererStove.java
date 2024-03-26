@@ -45,10 +45,10 @@ public class TileEntityRendererStove extends TileEntityRenderer<TileEntityStove>
 
 	@Override
 	public void doRender(TileEntityStove tileEntity, double x, double y, double z, float g) {
-		float offsetX = 0.3f;
-		float offsetZ = 0.4f;
-		float relativeX = 0;
-		float relativeZ = 0;
+		float offsetX = tileEntity.itemRenderOffsetX;
+		float offsetZ = tileEntity.itemRenderOffsetZ;
+		float relativeX = tileEntity.itemRenderRelativeX;
+		float relativeZ = tileEntity.itemRenderRelativeZ;
 		/* we need this shape:
 			#	#
 			#	#

@@ -37,6 +37,11 @@ public class TileEntityStove extends TileEntity implements IInventory {
 	public int currentBurnTime = 0;
 	public int maxBurnTime = 0;
 
+	public float itemRenderOffsetX = 0.3f;
+	public float itemRenderOffsetZ = 0.4f;
+	public float itemRenderRelativeX = 0;
+	public float itemRenderRelativeZ = 0;
+
 	public TileEntityStove() {
 	}
 

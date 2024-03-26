@@ -71,6 +71,24 @@ public class BlockStove extends BlockTileEntityRotatable {
 			world.spawnParticle("smoke", f + f4, f1, f2 + f3, 0.0, 0.0, 0.0);
 			world.spawnParticle("flame", f + f4, f1, f2 + f3, 0.0, 0.0, 0.0);
 		}
+
+		TileEntityStove tileEntity = (TileEntityStove) world.getBlockTileEntity(x, y, z);
+		float offsetX = tileEntity.itemRenderOffsetX;
+		float offsetZ = tileEntity.itemRenderOffsetZ;
+		float relativeX = tileEntity.itemRenderRelativeX;
+		float relativeZ = tileEntity.itemRenderRelativeZ;
+		for (int i = 0; i < tileEntity.contentsToCook.size(); i++){
+			if (relativeX < offsetX * 3) {
+				world.spawnParticle("smoke", x + 0.2f + relativeX, y + 1.2f, z + 0.24f + relativeZ, 0, 0, 0);
+				relativeX += offsetX;
+				if (relativeX == offsetX * 3) {
+					relativeX = 0;
+					if (relativeZ < offsetZ * 2) {
+						relativeZ += offsetZ;
+					}
+				}
+			}
+		}
 	}
 
 	private boolean isIngredient(Item item){
