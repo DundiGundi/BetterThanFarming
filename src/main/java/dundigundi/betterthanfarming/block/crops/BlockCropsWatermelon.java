@@ -31,7 +31,6 @@ public class BlockCropsWatermelon extends BlockFlower {
 			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_03.png"),
 			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_04.png")
 	};
-
 	public BlockCropsWatermelon(String key, int id) {
 		super(key, id);
 	}

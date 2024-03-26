@@ -18,6 +18,10 @@ item.betterthanfarming.tool.knife.desc=Sharp indeed!
 item.betterthanfarming.plate.name=Plate
 item.betterthanfarming.plate.desc=It holds food. Shrimple as that.
 
+item.betterthanfarming.food.potato.raw.name=Raw Potato
+item.betterthanfarming.food.potato.raw.desc=Uncooked potato, not so delicious.
+item.betterthanfarming.food.potato.baked.name=Baked Potato
+item.betterthanfarming.food.potato.baked.desc=Baked potato. Smoking!
 item.betterthanfarming.food.scallion.name=Scallion
 item.betterthanfarming.food.scallion.desc =You can eat it or make cheese with it
 item.betterthanfarming.food.cheese.slice.name=A slice of cheese

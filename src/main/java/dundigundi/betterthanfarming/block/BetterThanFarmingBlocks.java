@@ -3,6 +3,7 @@ package dundigundi.betterthanfarming.block;
 import dundigundi.betterthanfarming.BetterThanFarming;
 import dundigundi.betterthanfarming.BetterThanFarmingConfig;
 import dundigundi.betterthanfarming.BetterThanFarmingTags;
+import dundigundi.betterthanfarming.block.crops.BlockCropsPotato;
 import dundigundi.betterthanfarming.block.crops.BlockCropsWatermelon;
 import dundigundi.betterthanfarming.block.entity.TileEntityCheeseMaker;
 import dundigundi.betterthanfarming.block.entity.TileEntityStove;
@@ -44,6 +45,7 @@ public class BetterThanFarmingBlocks {
 
 	//Crops
 	public static Block cropsWatermelon;
+	public static Block cropsPotato;
 
 	//Food
 	public static Block blockOfCheese;
@@ -80,6 +82,11 @@ public class BetterThanFarmingBlocks {
 		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_02.png");
 		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_03.png");
 		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_04.png");
+		//Potato
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "potato_growing_01.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "potato_growing_02.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "potato_growing_03.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "potato_growing_04.png");
 
 	}
 
@@ -121,6 +128,7 @@ public class BetterThanFarmingBlocks {
 			.setHardness(0.8F)
 			.setResistance(0.8F)
 			.setTags(BlockTags.MINEABLE_BY_HOE);
+
 		BlockBuilder blockFlowerBuilder = new BlockBuilder(MOD_ID)
 				.setBlockSound(BlockSounds.GRASS)
 				.setHardness(0.0f)
@@ -186,6 +194,12 @@ public class BetterThanFarmingBlocks {
 		cropsWatermelon = blockFlowerBuilder
 				.setBlockModel(new BlockModelRenderBlocks(32))
 				.build(new BlockCropsWatermelon("crops.watermelon", nextBlockID("cropsWatermelon"))
+						.withDisabledStats()
+						.withDisabledNeighborNotifyOnMetadataChange()
+						.withLitInteriorSurface(true));
+		cropsPotato = blockFlowerBuilder
+				.setBlockModel(new BlockModelRenderBlocks(6))
+				.build(new BlockCropsPotato("crops.potato", nextBlockID("cropsPotato"))
 						.withDisabledStats()
 						.withDisabledNeighborNotifyOnMetadataChange()
 						.withLitInteriorSurface(true));

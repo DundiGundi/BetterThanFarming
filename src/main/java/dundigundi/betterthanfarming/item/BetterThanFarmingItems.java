@@ -33,6 +33,8 @@ public class BetterThanFarmingItems {
 	//seeds
 	public static Item seedsWatermelon;
 	//crops and meats
+	public static Item foodPotatoRaw;
+	public static Item foodPotatoBaked;
 	public static Item foodCheeseSlice;
 	public static Item foodScallion;
 	public static Item foodBeefRaw;
@@ -66,6 +68,8 @@ public class BetterThanFarmingItems {
 		seedsWatermelon = ItemHelper.createItem(MOD_ID, new ItemSeeds("seeds.watermelon", nextItemID("seedsWatermelon"), BetterThanFarmingBlocks.cropsWatermelon), "seeds_watermelon.png");
 
 		//crops and meats
+		foodPotatoRaw = ItemHelper.createItem(MOD_ID, new ItemFoodPotatoRaw("food.potato.raw", nextItemID("foodPotatoRaw"), 1, false, 8, BetterThanFarmingBlocks.cropsPotato), "potato_raw.png");
+		foodPotatoBaked = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.potato.baked", nextItemID("foodPotatoBaked"), 2, false, 8), "potato_baked.png");
 		foodScallion = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.scallion", nextItemID("foodScallion"), 1, false, 8	), "scallion.png");
 		foodCheeseSlice = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.cheese.slice",nextItemID("foodCheeseSlice"), 1, false, 8), "cheeseSlice.png");
 		foodBeefRaw = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.beef.raw", nextItemID("foodBeefRaw"), 2, true, 4), "beef_raw.png");
@@ -93,5 +97,6 @@ public class BetterThanFarmingItems {
 		LookupCookingIngredients.instance.addIngredientEntry(BetterThanFarmingItems.foodChickenRaw.id, BetterThanFarmingItems.foodChickenCooked);
 		LookupCookingIngredients.instance.addIngredientEntry(BetterThanFarmingItems.foodMuttonRaw.id, BetterThanFarmingItems.foodMuttonCooked);
 		LookupCookingIngredients.instance.addIngredientEntry(BetterThanFarmingItems.foodCalamariRaw.id, BetterThanFarmingItems.foodCalamariCooked);
+		LookupCookingIngredients.instance.addIngredientEntry(BetterThanFarmingItems.foodPotatoRaw.id, BetterThanFarmingItems.foodPotatoBaked);
 	}
 }

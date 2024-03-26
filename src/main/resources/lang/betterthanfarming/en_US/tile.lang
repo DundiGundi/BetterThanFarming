@@ -20,6 +20,8 @@ tile.betterthanfarming.stove.active.desc=Light it up and fuel it to cook on it!
 
 tile.betterthanfarming.crops.watermelon.name=Watermelon Plant
 tile.betterthanfarming.crops.watermelon.desc =Wait for it to grow, then you can cut it up into slices!
+tile.betterthanfarming.crops.potato.name=Potato Plant
+tile.betterthanfarming.crops.potato.desc=Grows potatoes.
 
 tile.betterthanfarming.block.scallion.name=Scallion Plant
 tile.betterthanfarming.block.scallion.desc =You can cut it for scallions.
