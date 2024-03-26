@@ -24,6 +24,7 @@ import sunsetsatellite.catalyst.Catalyst;
 import sunsetsatellite.catalyst.core.util.MpGuiEntry;
 import turniplabs.halplibe.helper.BlockBuilder;
 import turniplabs.halplibe.helper.EntityHelper;
+import turniplabs.halplibe.helper.TextureHelper;
 
 
 public class BetterThanFarmingBlocks {
@@ -67,6 +68,19 @@ public class BetterThanFarmingBlocks {
 	private void initializeTiles() {
 		EntityHelper.Core.createTileEntity(TileEntityCheeseMaker.class, "CheeseMaker");
 		EntityHelper.Core.createTileEntity(TileEntityStove.class, "stove");
+	}
+
+	private void createBlockTextureIndexes(){
+		//Watermelon
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_01.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_02.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_03.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_04.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_01.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_02.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_03.png");
+		TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_04.png");
+
 	}
 
 	public void initializeBlocks() {
@@ -179,5 +193,6 @@ public class BetterThanFarmingBlocks {
 		registerGUIs();
 		initializeTiles();
 		pickaxeLevels();
+		createBlockTextureIndexes();
 	}
 }

@@ -12,12 +12,25 @@ import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.util.helper.Side;
 import net.minecraft.core.util.phys.AABB;
 import net.minecraft.core.world.World;
+import turniplabs.halplibe.helper.TextureHelper;
 
 import java.util.Random;
 
+import static dundigundi.betterthanfarming.BetterThanFarming.MOD_ID;
+
 public class BlockCropsWatermelon extends BlockFlower {
-	public static final int[] GROWTH_STAGE_TEXTURES_TOP = new int[]{BlockCropsPumpkin.texCoordToIndex(16, 15), BlockCropsPumpkin.texCoordToIndex(16, 14), BlockCropsPumpkin.texCoordToIndex(16, 13), BlockCropsPumpkin.texCoordToIndex(16, 12)};
-	public static final int[] GROWTH_STAGE_TEXTURES_SIDE = new int[]{BlockCropsPumpkin.texCoordToIndex(17, 15), BlockCropsPumpkin.texCoordToIndex(17, 14), BlockCropsPumpkin.texCoordToIndex(17, 13), BlockCropsPumpkin.texCoordToIndex(17, 12)};
+	public static final int[] GROWTH_STAGE_TEXTURES_TOP = new int[]{
+			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_01.png"),
+			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_02.png"),
+			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_03.png"),
+			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_top_04.png")
+	};
+	public static final int[] GROWTH_STAGE_TEXTURES_SIDE = new int[]{
+			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_01.png"),
+			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_02.png"),
+			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_03.png"),
+			TextureHelper.getOrCreateBlockTextureIndex(MOD_ID, "watermelon_growing_side_04.png")
+	};
 
 	public BlockCropsWatermelon(String key, int id) {
 		super(key, id);
