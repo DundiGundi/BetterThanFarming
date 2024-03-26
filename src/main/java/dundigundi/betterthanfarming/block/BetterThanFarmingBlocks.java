@@ -166,11 +166,15 @@ public class BetterThanFarmingBlocks {
 						.setKilledByWeather()
 						.withTags(BetterThanFarmingTags.CUTTABLE_BY_KNIFE));
 		blockWatermelon = blockCropBuilder
-			.setTextures(MOD_ID, "melonSide.png")
-			.setTopTexture(MOD_ID, "melonTop.png")
-			.build(new BlockWatermelon("block.melon", nextBlockID("blockWatermelon"), Material.wood));
+				.setTextures(MOD_ID, "melonSide.png")
+				.setTopTexture(MOD_ID, "melonTop.png")
+				.build(new BlockWatermelon("block.melon", nextBlockID("blockWatermelon"), Material.wood));
 		cropsWatermelon = blockFlowerBuilder
-				.build(new BlockCropsWatermelon("crops.watermelon", nextBlockID("cropsWatermelon")).withDisabledStats().withDisabledNeighborNotifyOnMetadataChange().withLitInteriorSurface(true));
+				.setBlockModel(new BlockModelRenderBlocks(32))
+				.build(new BlockCropsWatermelon("crops.watermelon", nextBlockID("cropsWatermelon"))
+						.withDisabledStats()
+						.withDisabledNeighborNotifyOnMetadataChange()
+						.withLitInteriorSurface(true));
 
 		registerGUIs();
 		initializeTiles();

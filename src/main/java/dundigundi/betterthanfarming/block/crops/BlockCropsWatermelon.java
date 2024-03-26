@@ -18,7 +18,6 @@ import java.util.Random;
 public class BlockCropsWatermelon extends BlockFlower {
 	public static final int[] GROWTH_STAGE_TEXTURES_TOP = new int[]{BlockCropsPumpkin.texCoordToIndex(16, 15), BlockCropsPumpkin.texCoordToIndex(16, 14), BlockCropsPumpkin.texCoordToIndex(16, 13), BlockCropsPumpkin.texCoordToIndex(16, 12)};
 	public static final int[] GROWTH_STAGE_TEXTURES_SIDE = new int[]{BlockCropsPumpkin.texCoordToIndex(17, 15), BlockCropsPumpkin.texCoordToIndex(17, 14), BlockCropsPumpkin.texCoordToIndex(17, 13), BlockCropsPumpkin.texCoordToIndex(17, 12)};
-	public static final int LEAF_TEXTURE = BlockCropsPumpkin.texCoordToIndex(16, 16);
 
 	public BlockCropsWatermelon(String key, int id) {
 		super(key, id);
