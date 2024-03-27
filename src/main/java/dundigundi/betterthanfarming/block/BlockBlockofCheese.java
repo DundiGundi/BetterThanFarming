@@ -42,7 +42,7 @@ public class BlockBlockofCheese extends BlockCake {
 				}
 			}
 		}else{
-			if (entityplayer.health < 20) {
+			if (entityplayer.getHealth() < entityplayer.getMaxHealth()) {
 				entityplayer.heal(2);
 				int l = world.getBlockMetadata(i, j, k) + 1;
 				if (l >= 6) {

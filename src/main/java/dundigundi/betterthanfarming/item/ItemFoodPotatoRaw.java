@@ -25,7 +25,7 @@ public class ItemFoodPotatoRaw extends ItemFoodStackable {
 		}
 		if (world.getBlockId(blockX, blockY - 1, blockZ) == Block.farmlandDirt.id && world.canPlaceInsideBlock(blockX, blockY, blockZ)) {
 			world.setBlockWithNotify(blockX, blockY, blockZ, this.cropsId);
-			world.playBlockSoundEffect((float)blockX + 0.5f, (float)blockY + 0.5f, (float)blockZ + 0.5f, Block.blocksList[this.cropsId], EnumBlockSoundEffectType.PLACE);
+			world.playBlockSoundEffect(entityplayer,(float)blockX + 0.5f, (float)blockY + 0.5f, (float)blockZ + 0.5f, Block.blocksList[this.cropsId], EnumBlockSoundEffectType.PLACE);
 			itemstack.consumeItem(entityplayer);
 			return true;
 		}

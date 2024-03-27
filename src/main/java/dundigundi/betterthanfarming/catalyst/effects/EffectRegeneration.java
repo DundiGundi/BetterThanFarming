@@ -24,7 +24,7 @@ public class EffectRegeneration extends Effect {
 		if (effectStack.getEffect() != this) return;
 		if (!(effectContainer.getParent() instanceof EntityLiving)) return;
 		EntityLiving entityLiving = (EntityLiving) effectContainer.getParent();
-		if (elapsedTicks == effectApplyingTick && entityLiving.health < 20){
+		if (elapsedTicks == effectApplyingTick && entityLiving.getHealth() < entityLiving.getMaxHealth()){
 			entityLiving.heal(1);
 			elapsedTicks = 0;
 		}
