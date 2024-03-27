@@ -3,7 +3,7 @@ NuyKii - Developer
 
 --Direct contributions--
 TurnipLabs - turnip texture
-theMidford - models
+theMidford - models, textures, ideas
 
 --Libraries/Mods integrated--
 azurelmao - halplibe

@@ -2,6 +2,7 @@ package dundigundi.betterthanfarming.mixin;
 
 import dundigundi.betterthanfarming.block.BetterThanFarmingBlocks;
 import dundigundi.betterthanfarming.block.crops.BlockCropsPotato;
+import dundigundi.betterthanfarming.block.crops.BlockCropsTurnip;
 import dundigundi.betterthanfarming.block.crops.BlockCropsWatermelon;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockCropsPumpkin;
@@ -35,6 +36,15 @@ public class ItemDyeMixin {
 			if (id == BetterThanFarmingBlocks.cropsPotato.id && meta < 3) {
 				if (!world.isClientSide) {
 					((BlockCropsPotato)BetterThanFarmingBlocks.cropsPotato).fertilize(world, blockX, blockY, blockZ);
+					if (entityplayer.getGamemode().consumeBlocks()) {
+						--itemstack.stackSize;
+					}
+				}
+				cir.setReturnValue(true);
+			}
+			if (id == BetterThanFarmingBlocks.cropsTurnip.id && meta < 3) {
+				if (!world.isClientSide) {
+					((BlockCropsTurnip)BetterThanFarmingBlocks.cropsTurnip).fertilize(world, blockX, blockY, blockZ);
 					if (entityplayer.getGamemode().consumeBlocks()) {
 						--itemstack.stackSize;
 					}

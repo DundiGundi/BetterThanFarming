@@ -100,6 +100,6 @@ public class BlockCropsPotato extends BlockFlower {
 		if (meta != 3) {
 			return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodPotatoRaw)};
 		}
-		return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodPotatoRaw, world.rand.nextInt(3) + 1), new ItemStack(BetterThanFarmingItems.foodPotatoRaw)};
+		return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodPotatoRaw, world.rand.nextInt(3) + 1)};
 	}
 }

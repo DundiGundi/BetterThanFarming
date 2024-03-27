@@ -1,5 +1,6 @@
 package dundigundi.betterthanfarming.block.crops;
 
+import dundigundi.betterthanfarming.block.BetterThanFarmingBlocks;
 import dundigundi.betterthanfarming.item.BetterThanFarmingItems;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockFlower;
@@ -36,15 +37,19 @@ public class BlockCropsTurnip extends BlockFlower {
 	@Override
 	public void updateTick(World world, int x, int y, int z, Random rand) {
 		float f;
-		int l;
+		int meta;
 		super.updateTick(world, x, y, z, rand);
-		if (world.getBlockLightValue(x, y + 1, z) >= 9 && (l = world.getBlockMetadata(x, y, z)) < 3 && rand.nextInt((int)(100.0f / (f = this.getGrowthRate(world, x, y, z)))) == 0) {
-			world.setBlockMetadataWithNotify(x, y, z, ++l);
+		if (world.getBlockLightValue(x, y + 1, z) >= 9 && (meta = world.getBlockMetadata(x, y, z)) < 6 && rand.nextInt((int)(100.0f / (f = this.getGrowthRate(world, x, y, z)))) == 0) {
+			if (++meta == 3) {
+				world.setBlockAndMetadataWithNotify(x, y, z, BetterThanFarmingBlocks.blockTurnip.id, 0);
+			} else {
+				world.setBlockMetadataWithNotify(x, y, z, meta);
+			}
 		}
 	}
 
-	public void fertilize(World world, int i, int j, int k) {
-		world.setBlockMetadataWithNotify(i, j, k, 3);
+	public void fertilize(World world, int x, int y, int z) {
+		world.setBlockWithNotify(x, y, z, BetterThanFarmingBlocks.blockTurnip.id);
 	}
 
 	private float getGrowthRate(World world, int x, int y, int z) {
@@ -96,8 +101,8 @@ public class BlockCropsTurnip extends BlockFlower {
 	@Override
 	public ItemStack[] getBreakResult(World world, EnumDropCause dropCause, int x, int y, int z, int meta, TileEntity tileEntity) {
 		if (meta != 3) {
-			return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodPotatoRaw)};
+			return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodTurnip)};
 		}
-		return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodPotatoRaw, world.rand.nextInt(3) + 1), new ItemStack(BetterThanFarmingItems.foodPotatoRaw)};
+		return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodTurnip, 1)};
 	}
 }
