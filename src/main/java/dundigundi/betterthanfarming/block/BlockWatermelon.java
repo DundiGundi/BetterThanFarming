@@ -22,7 +22,6 @@ public class BlockWatermelon extends Block {
 				return new ItemStack[]{new ItemStack(this)};
 			default:
 				return new ItemStack[]{new ItemStack(BetterThanFarmingItems.foodWatermelonSlice, 4)};
-
 		}
 	}
 }

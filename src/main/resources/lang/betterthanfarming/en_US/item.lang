@@ -18,6 +18,8 @@ item.betterthanfarming.tool.knife.desc=Sharp indeed!
 item.betterthanfarming.plate.name=Plate
 item.betterthanfarming.plate.desc=It holds food. Shrimple as that.
 
+item.betterthanfarming.food.turnip.name=Turnip
+item.betterthanfarming.food.turnip.desc=Made possible with Turnip-Labs' Halplibe
 item.betterthanfarming.food.potato.raw.name=Raw Potato
 item.betterthanfarming.food.potato.raw.desc=Uncooked potato, not so delicious.
 item.betterthanfarming.food.potato.baked.name=Baked Potato

@@ -33,6 +33,7 @@ public class BetterThanFarmingItems {
 	//seeds
 	public static Item seedsWatermelon;
 	//crops and meats
+	public static Item foodTurnip;
 	public static Item foodPotatoRaw;
 	public static Item foodPotatoBaked;
 	public static Item foodCheeseSlice;
@@ -68,6 +69,7 @@ public class BetterThanFarmingItems {
 		seedsWatermelon = ItemHelper.createItem(MOD_ID, new ItemSeeds("seeds.watermelon", nextItemID("seedsWatermelon"), BetterThanFarmingBlocks.cropsWatermelon), "seeds_watermelon.png");
 
 		//crops and meats
+		foodTurnip = ItemHelper.createItem(MOD_ID, new ItemFoodPotatoRaw("food.turnip", nextItemID("foodTurnip"), 1, false, 8, BetterThanFarmingBlocks.cropsTurnip), "turnip.png");
 		foodPotatoRaw = ItemHelper.createItem(MOD_ID, new ItemFoodPotatoRaw("food.potato.raw", nextItemID("foodPotatoRaw"), 1, false, 8, BetterThanFarmingBlocks.cropsPotato), "potato_raw.png");
 		foodPotatoBaked = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.potato.baked", nextItemID("foodPotatoBaked"), 2, false, 8), "potato_baked.png");
 		foodScallion = ItemHelper.createItem(MOD_ID, new ItemFoodStackable("food.scallion", nextItemID("foodScallion"), 1, false, 8	), "scallion.png");

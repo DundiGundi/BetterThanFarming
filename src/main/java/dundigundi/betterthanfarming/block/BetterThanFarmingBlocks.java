@@ -4,6 +4,7 @@ import dundigundi.betterthanfarming.BetterThanFarming;
 import dundigundi.betterthanfarming.BetterThanFarmingConfig;
 import dundigundi.betterthanfarming.BetterThanFarmingTags;
 import dundigundi.betterthanfarming.block.crops.BlockCropsPotato;
+import dundigundi.betterthanfarming.block.crops.BlockCropsTurnip;
 import dundigundi.betterthanfarming.block.crops.BlockCropsWatermelon;
 import dundigundi.betterthanfarming.block.entity.TileEntityCheeseMaker;
 import dundigundi.betterthanfarming.block.entity.TileEntityStove;
@@ -46,11 +47,13 @@ public class BetterThanFarmingBlocks {
 	//Crops
 	public static Block cropsWatermelon;
 	public static Block cropsPotato;
+	public static Block cropsTurnip;
 
 	//Food
 	public static Block blockOfCheese;
 	public static Block blockScallion;
 	public static Block blockWatermelon;
+	public static Block blockTurnip;
 
 	//Machines
 	public static Block cheeseMaker;
@@ -190,7 +193,7 @@ public class BetterThanFarmingBlocks {
 		blockWatermelon = blockCropBuilder
 				.setTextures(MOD_ID, "melonSide.png")
 				.setTopTexture(MOD_ID, "melonTop.png")
-				.build(new BlockWatermelon("block.melon", nextBlockID("blockWatermelon"), Material.wood));
+				.build(new BlockWatermelon("block.melon", nextBlockID("blockWatermelon"), Material.vegetable));
 		cropsWatermelon = blockFlowerBuilder
 				.setBlockModel(new BlockModelRenderBlocks(32))
 				.build(new BlockCropsWatermelon("crops.watermelon", nextBlockID("cropsWatermelon"))
@@ -200,6 +203,16 @@ public class BetterThanFarmingBlocks {
 		cropsPotato = blockFlowerBuilder
 				.setBlockModel(new BlockModelRenderBlocks(6))
 				.build(new BlockCropsPotato("crops.potato", nextBlockID("cropsPotato"))
+						.withDisabledStats()
+						.withDisabledNeighborNotifyOnMetadataChange()
+						.withLitInteriorSurface(true));
+		blockTurnip = blockCropBuilder
+				.setTextures(MOD_ID, "melonSide.png")
+				.setTopTexture(MOD_ID, "melonTop.png")
+				.build(new BlockWatermelon("block.turnip", nextBlockID("blockTurnip"), Material.vegetable));
+		cropsTurnip = blockFlowerBuilder
+				.setBlockModel(new BlockModelRenderBlocks(6))
+				.build(new BlockCropsTurnip("crops.turnip", nextBlockID("cropsTurnip"))
 						.withDisabledStats()
 						.withDisabledNeighborNotifyOnMetadataChange()
 						.withLitInteriorSurface(true));
