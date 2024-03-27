@@ -1,0 +1,22 @@
+DundiGundi - Lead Developer
+NuyKii - Developer
+
+--Direct contributions--
+TurnipLabs - turnip texture
+theMidford - models
+
+--Libraries/Mods integrated--
+azurelmao - halplibe
+useless - dragonfly, terrainapi
+sunsetsatellite - catalyst
+
+--BTA--
+jonkadelic
+maggandgeez
+nebulabc
+bestsoft100
+
+--Thanks--
+BTA discord server
+BTA Modding discord server
+calmilamsy & 6pak - babric and babric maven
